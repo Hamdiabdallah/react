@@ -2,43 +2,37 @@
 import logo from './logo.svg';
 import Products from './components/Products.jsx'
 import './App.css';
-import './components/style.css'
 // eslint-disable-next-line no-unused-vars
 import Nextproduct  from './components/nextProduct.jsx'
-const myProduct = "tree";
-const myListe =[
-  { id : "1", name : "html"},
-  { id: "2" , name : "react"}
-]
-const NewListe = myListe.map( (list, index) => {
-  return ( <li key ={list.id}>{list.name}</li>);
-})
 function App() {
   return (
     <>
     <div className="App">
       <h1 className='header'>Pingucoder 🐧</h1>
     </div>
-    <ul>
-      {NewListe}
-    </ul>
-    
-    
-    
+    <div className='dsplay'>
+      <div style={{ height: '100%'}} >
+        <Products  content1="client-side routing and" content2="non-root public URL by running"/>
+        <Products name="nizal" content1="client-side hhhhhhhdfgd" content2="non-root public URL by running"/>
+        <Products name="wassim" content1="client-side and" content2="the development, run `npm start` or `yarn start"/>
+        <Products name="tesnim" content1="directly fjkn' efrn dfenf u" content2="meta tags, or analytics to this file."/>
+        <Products name="wissal" content1="directly in the browser, you" content2="step will place the bundled scripts"/>
+      </div>
+      <div style={{ height: '100%'}} className={'secondProduct'}>
+        <Nextproduct>
+        <i class="fa-brands fa-facebook"><a href="https://www.facebook.com/"> facebook</a></i>
+        
+        </Nextproduct>
+        <Nextproduct>
+        <i class="fa-brands fa-instagram"><a href="https://www.instagram.com/"> instagram</a></i>
+        </Nextproduct>
+        <Nextproduct>
+        <i class="fa-brands fa-x-twitter"><a href="https://www.twitter.com/"> twitter</a></i>
+        </Nextproduct>
+      </div>
+    </div>
     </>
   );
-}
-function TestProduct(){
-  if(myProduct === "tree"){
-    return ( <Nextproduct ><i class="fa-brands fa-facebook"><a href="https://www.facebook.com/"> facebook</a></i></Nextproduct>)
-  }else {
-    return <div></div>
-  }
-
-  
-  // eslint-disable-next-line no-lone-blocks
-  // {myProduct === "tree" ? (<Nextproduct><i class="fab fa-facebook"><a href="https://www.facebook.com/"> facebook</a></i></Nextproduct>) : (<div></div>)}
-
 }
 
 export default App;
