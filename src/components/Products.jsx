@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import "./style.css"
 
-function Products  ({name="no name",content1,content2}) {
+function Products  ({name="name not found",content1,content2}) {
 
   return (
     <>
